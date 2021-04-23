@@ -1,20 +1,20 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PREFFERED_VET" directorySegmentName="seg_0" id="19DD29B3-32D0-6BE2-2348-0434AF28770E">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VET_VISIT" directorySegmentName="seg_0" id="BAA9E175-6C83-CF9C-897F-0603A1D6C4EB">
 <createdBy>aaro0006</createdBy>
-<createdTime>2021-04-23 06:23:43 UTC</createdTime>
+<createdTime>2021-04-23 07:02:33 UTC</createdTime>
 <ownerDesignName>ad_logical</ownerDesignName>
 <engineerTo>
 <item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
 </engineerTo>
 <sourcePk>773262D0-399C-637E-98B0-9A04CD173367</sourcePk>
-<dominantRole>B37F0670-5648-91C7-A6EA-EF0B30941734</dominantRole>
 <identifying>false</identifying>
-<nameOnTarget>pefers</nameOnTarget>
+<nameOnSource>attends</nameOnSource>
 <optionalSource>true</optionalSource>
-<optionalTarget>true</optionalTarget>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>B37F0670-5648-91C7-A6EA-EF0B30941734</sourceEntity>
-<targetCardinalityString>1</targetCardinalityString>
-<targetEntity>B08B3EBD-1A78-9D7A-A24F-D045A2C21ED1</targetEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>44B2A142-9B5B-B098-3355-21F20246A9BA</targetEntity>
 <transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
 </Relation>

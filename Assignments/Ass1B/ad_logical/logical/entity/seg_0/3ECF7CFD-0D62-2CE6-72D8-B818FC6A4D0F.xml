@@ -14,4 +14,107 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="drug_id" id="78F7B106-1E2A-FB60-4C37-08EE56F1D2F0">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:38:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique drug identifier]]></commentInRDBMS>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_name" id="11704422-B7A6-A2C8-C643-AAB7555D1981">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:38:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of drug]]></commentInRDBMS>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_qty" id="3D13F0A1-DEB1-C29C-45CA-6AAF33775306">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:38:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantity of drug]]></commentInRDBMS>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_cost" id="43C80CB2-912F-58D4-C1E5-C6C46ACB3D54">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:39:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[cost of the drug]]></commentInRDBMS>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="7C861088-FE40-26C4-8B84-8CBF5F729365">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:41:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>0C2541C7-76A9-F91E-E4F0-8310618C61B5</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<referedAttribute>783A756B-C75B-D361-37B7-CDFB9E05C9F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_datetime" id="38F6FDA1-6280-415E-E06C-DF3E0CFCB2AF">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:41:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[date and time of visit]]></commentInRDBMS>
+<generatorID>0C2541C7-76A9-F91E-E4F0-8310618C61B5</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<referedAttribute>252F665C-CDF4-0873-E2A6-10A0210AFA43</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7E3C9DBB-FD2C-3001-1BD4-7CFF89E3807D" name="DRUG PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:38:23 UTC</createdTime>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78F7B106-1E2A-FB60-4C37-08EE56F1D2F0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
