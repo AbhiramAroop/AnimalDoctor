@@ -99,20 +99,22 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="vet_id" id="7FC1EEF0-F768-2B24-F3BF-98DD80E91D42">
+<Attribute name="vet_id" id="50D047F6-B155-3A74-2C85-579168A9A392">
 <createdBy>aaro0006</createdBy>
-<createdTime>2021-04-23 05:50:27 UTC</createdTime>
-<commentInRDBMS><![CDATA[vet identifier of the preferred vet by the owner]]></commentInRDBMS>
+<createdTime>2021-04-23 06:24:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>19DD29B3-32D0-6BE2-2348-0434AF28770E</generatorID>
 <ownerDesignName>ad_logical</ownerDesignName>
 <engineerTo>
 <item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<referedAttribute>01417F92-781B-2802-1582-96F5B29E514E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
