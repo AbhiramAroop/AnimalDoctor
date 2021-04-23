@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PET_OWNERSHIP" directorySegmentName="seg_0" id="99748BBE-FD3A-73C0-523D-A99EC8042376">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 06:12:09 UTC</createdTime>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<sourcePk>5CACE7A6-188E-DDBE-06A9-212E20749F14</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>owns</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B08B3EBD-1A78-9D7A-A24F-D045A2C21ED1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>24C37E83-5182-7739-FE23-BC4351A71137</targetEntity>
+<transferable>true</transferable>
+</Relation>
