@@ -1,0 +1,1 @@
+ALTER TABLE service ADD CONSTRAINT service_pk PRIMARY KEY ( service_code );

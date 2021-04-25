@@ -1,0 +1,1 @@
+ALTER TABLE vet ADD CONSTRAINT vet_pk PRIMARY KEY ( vet_id );

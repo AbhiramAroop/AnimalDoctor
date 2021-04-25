@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+<changeSet author="aaro0006" id="_10">
+ <n0:runOracleScript objectName="DropStatements.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DropStatements.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_20">
+ <n0:runOracleScript objectName="MDSYS.SDO_GEOMETRY.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Structure_Type\MDSYS.SDO_GEOMETRY.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_30">
+ <n0:runOracleScript objectName="XMLTYPE.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Structure_Type\XMLTYPE.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_40">
+ <n0:runOracleScript objectName="DRUG.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\DRUG.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_50">
+ <n0:runOracleScript objectName="DRUG_Constraints.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\DRUG_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_60">
+ <n0:runOracleScript objectName="OWNER.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\OWNER.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_70">
+ <n0:runOracleScript objectName="OWNER_Constraints.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\OWNER_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_80">
+ <n0:runOracleScript objectName="PET.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\PET.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_90">
+ <n0:runOracleScript objectName="PET_Constraints.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\PET_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_100">
+ <n0:runOracleScript objectName="SERVICE.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\SERVICE.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_110">
+ <n0:runOracleScript objectName="SERVICE_Constraints.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\SERVICE_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_120">
+ <n0:runOracleScript objectName="VET.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\VET.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_130">
+ <n0:runOracleScript objectName="VET_Constraints.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\VET_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_140">
+ <n0:runOracleScript objectName="VISIT.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\VISIT.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_150">
+ <n0:runOracleScript objectName="VISIT_Constraints.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\VISIT_Constraints.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_160">
+ <n0:runOracleScript objectName="PET_OWNERSHIP.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\PET_OWNERSHIP.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_170">
+ <n0:runOracleScript objectName="PET_VISIT.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\PET_VISIT.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_180">
+ <n0:runOracleScript objectName="PREFFERED_VET.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\PREFFERED_VET.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_190">
+ <n0:runOracleScript objectName="VET_VISIT.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\VET_VISIT.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_200">
+ <n0:runOracleScript objectName="VISIT_DRUG.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\VISIT_DRUG.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+<changeSet author="aaro0006" id="_210">
+ <n0:runOracleScript objectName="VISIT_SERVICE.sql" ownerName="OSDDM-aaro0006" sourceType="FILE" >
+   <n0:source><![CDATA[ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\VISIT_SERVICE.sql]]></n0:source>
+ </n0:runOracleScript>
+</changeSet>
+</databaseChangeLog>

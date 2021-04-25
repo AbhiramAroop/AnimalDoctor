@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+<changeSet author="aaro0006" id="_10">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DropStatements.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_20">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter="/" splitStatements="false"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Structure_Type\MDSYS.SDO_GEOMETRY.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_30">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter="/" splitStatements="false"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Structure_Type\XMLTYPE.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_40">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\DRUG.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_50">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\DRUG_Constraints.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_60">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\OWNER.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_70">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\OWNER_Constraints.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_80">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\PET.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_90">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\PET_Constraints.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_100">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\SERVICE.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_110">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\SERVICE_Constraints.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_120">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\VET.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_130">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\VET_Constraints.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_140">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\VISIT.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_150">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\Table\VISIT_Constraints.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_160">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\PET_OWNERSHIP.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_170">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\PET_VISIT.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_180">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\PREFFERED_VET.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_190">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\VET_VISIT.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_200">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\VISIT_DRUG.sql"/>
+</changeSet>
+<changeSet author="aaro0006" id="_210">
+  <sqlFile dbms="oracle" encoding="UTF-8" endDelimiter=";" splitStatements="true"  stripComments="false" 
+           path="ad_logical\Relational_1\Oracle_Database_12c\DataObjects\ForeignKey\VISIT_SERVICE.sql"/>
+</changeSet>
+</databaseChangeLog>

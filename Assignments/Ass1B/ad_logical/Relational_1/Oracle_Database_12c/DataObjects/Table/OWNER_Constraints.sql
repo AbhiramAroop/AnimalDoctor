@@ -1,0 +1,1 @@
+ALTER TABLE owner ADD CONSTRAINT owner_pk PRIMARY KEY ( owner_id );
