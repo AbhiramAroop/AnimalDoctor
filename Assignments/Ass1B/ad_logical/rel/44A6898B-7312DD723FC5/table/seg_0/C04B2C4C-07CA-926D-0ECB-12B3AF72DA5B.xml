@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C04B2C4C-07CA-926D-0ECB-12B3AF72DA5B" name="VET">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>B37F0670-5648-91C7-A6EA-EF0B30941734</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vet_id" id="F673D99A-0D94-6D77-3BC1-75ED116C3F90">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>01417F92-781B-2802-1582-96F5B29E514E</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_name" id="2FBA73E1-5C4B-B85E-74CA-5A71008F02D9">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the vet]]></commentInRDBMS>
+<generatorID>0E46A852-526B-7C06-4FE0-343D1DED2261</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3567BE32-D90B-0A2B-A106-5FE186391DBA" name="VET_PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>773262D0-399C-637E-98B0-9A04CD173367</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F673D99A-0D94-6D77-3BC1-75ED116C3F90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

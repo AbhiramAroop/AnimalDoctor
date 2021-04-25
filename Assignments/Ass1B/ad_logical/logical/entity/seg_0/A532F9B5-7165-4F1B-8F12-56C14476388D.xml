@@ -56,25 +56,9 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="vet_id" id="997E49E1-6E26-68F6-EB78-3F41F61711F6">
+<Attribute name="VISIT_visit_datetime" id="29E4D9B0-F84A-7508-DF56-8D9D62CF3B4B">
 <createdBy>aaro0006</createdBy>
-<createdTime>2021-04-23 07:45:05 UTC</createdTime>
-<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
-<generatorID>F6776C45-44FC-278E-D058-740E881E4FEF</generatorID>
-<ownerDesignName>ad_logical</ownerDesignName>
-<engineerTo>
-<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
-</engineerTo>
-<referedAttribute>783A756B-C75B-D361-37B7-CDFB9E05C9F0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="visit_datetime" id="41245DA1-1E2F-A1E4-BB08-14D229318171">
-<createdBy>aaro0006</createdBy>
-<createdTime>2021-04-23 07:45:05 UTC</createdTime>
+<createdTime>2021-04-25 01:59:36 UTC</createdTime>
 <commentInRDBMS><![CDATA[date and time of visit]]></commentInRDBMS>
 <generatorID>F6776C45-44FC-278E-D058-740E881E4FEF</generatorID>
 <ownerDesignName>ad_logical</ownerDesignName>
@@ -87,9 +71,25 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="VET_vet_id" id="0C2906F1-A72D-9F76-F81F-D0A2D3E1D5B2">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 01:59:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>F6776C45-44FC-278E-D058-740E881E4FEF</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<referedAttribute>37C65F32-924E-C050-2DD9-9214CA52B9C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="04FC6B73-6E66-F504-AFE8-C00D41FAAD72" name="SERVICE PK">
+<identifier id="04FC6B73-6E66-F504-AFE8-C00D41FAAD72" name="SERVICE_PK">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 07:36:57 UTC</createdTime>
 <ownerDesignName>ad_logical</ownerDesignName>

@@ -45,7 +45,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="773262D0-399C-637E-98B0-9A04CD173367" name="VET PK">
+<identifier id="773262D0-399C-637E-98B0-9A04CD173367" name="VET_PK">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 06:20:18 UTC</createdTime>
 <ownerDesignName>ad_logical</ownerDesignName>

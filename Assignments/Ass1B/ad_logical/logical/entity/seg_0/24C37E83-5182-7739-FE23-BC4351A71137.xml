@@ -29,7 +29,7 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="owner_id" id="8E994B89-7385-2096-1336-0D36FDA92C82">
+<Attribute name="OWNER_owner_id" id="8E994B89-7385-2096-1336-0D36FDA92C82">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 06:12:09 UTC</createdTime>
 <commentInRDBMS><![CDATA[Unique identifier for the pet owner]]></commentInRDBMS>
@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="pet_gender" id="8A59601A-B8AD-5F16-8FD2-B6573F52FAB6">
 <createdBy>aaro0006</createdBy>
@@ -116,7 +116,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="67763A09-8AF4-B5CE-FD78-F9CF58C3F9B3" name="PET PK">
+<identifier id="67763A09-8AF4-B5CE-FD78-F9CF58C3F9B3" name="PET_PK">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 06:02:49 UTC</createdTime>
 <ownerDesignName>ad_logical</ownerDesignName>

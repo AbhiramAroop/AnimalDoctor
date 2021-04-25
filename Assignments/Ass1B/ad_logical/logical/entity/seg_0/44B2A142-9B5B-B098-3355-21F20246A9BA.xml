@@ -15,23 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="vet_id" id="783A756B-C75B-D361-37B7-CDFB9E05C9F0">
-<createdBy>aaro0006</createdBy>
-<createdTime>2021-04-23 07:04:05 UTC</createdTime>
-<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
-<generatorID>BAA9E175-6C83-CF9C-897F-0603A1D6C4EB</generatorID>
-<ownerDesignName>ad_logical</ownerDesignName>
-<engineerTo>
-<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
-</engineerTo>
-<referedAttribute>01417F92-781B-2802-1582-96F5B29E514E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="pet_id" id="15AA18FF-F127-A0A9-0618-CA7DA54DC5BB">
+<Attribute name="PET_pet_id" id="15AA18FF-F127-A0A9-0618-CA7DA54DC5BB">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 07:04:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[The unique identifier for the pet]]></commentInRDBMS>
@@ -88,9 +72,25 @@
 <dataTypeSize>4 CHAR</dataTypeSize>
 <ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="VET_vet_id" id="37C65F32-924E-C050-2DD9-9214CA52B9C9">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 01:58:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>BAA9E175-6C83-CF9C-897F-0603A1D6C4EB</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<referedAttribute>01417F92-781B-2802-1582-96F5B29E514E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8AA9E901-459B-0DDC-F4AA-889C6AC2C0EF" name="VISIT PK">
+<identifier id="8AA9E901-459B-0DDC-F4AA-889C6AC2C0EF" name="VISIT_PK">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 07:04:30 UTC</createdTime>
 <ownerDesignName>ad_logical</ownerDesignName>
@@ -99,8 +99,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>783A756B-C75B-D361-37B7-CDFB9E05C9F0</attributeRef>
 <attributeRef>252F665C-CDF4-0873-E2A6-10A0210AFA43</attributeRef>
+<attributeRef>37C65F32-924E-C050-2DD9-9214CA52B9C9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

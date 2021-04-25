@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65AA077E-76B0-BF67-CA71-3A910D8412D8" name="OWNER">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>B08B3EBD-1A78-9D7A-A24F-D045A2C21ED1</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="owner_id" id="F3F4B77F-0DD0-3750-0B53-CD0A8B1D479D">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for the pet owner]]></commentInRDBMS>
+<generatorID>C46C81D2-B0BF-D9BB-6D57-0F3763CAD521</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_gname" id="E7C66536-6C8C-98C8-3268-C8756C273946">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Given/First name of the owner]]></commentInRDBMS>
+<generatorID>1EEF963B-1E26-F44B-5106-B6CB6DD0A0CA</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_fname" id="77BF6D97-7969-E0EA-F476-1DA161830792">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[family/last name of the owner]]></commentInRDBMS>
+<generatorID>762B062C-F9D2-8EE8-B64C-CF4B8A1F8155</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_street" id="B151F7E6-32BF-FCE9-5D7F-F52701EA7D01">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street where owner lives]]></commentInRDBMS>
+<generatorID>90FB0BD7-3C93-3F39-BD9B-A472FFD5656F</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_town" id="0AEB76DD-ED86-5D51-62A6-CBF826A3A466">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Town where owner is located]]></commentInRDBMS>
+<generatorID>357B48B2-34D0-9FC7-6F6C-D771888B7CD5</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_postcode" id="D9F1CB2E-8312-3133-1D41-6069FA9B6B51">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Post code of owner's location]]></commentInRDBMS>
+<generatorID>581EEA63-C13E-7EC5-3574-8FCC2029DE5B</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VET_vet_id" id="0E0853F7-59AE-9534-2B5A-2ACE75C1F182">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>50D047F6-B155-3A74-2C85-579168A9A392</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="937D7BE6-3B6C-3EA9-5423-30EE76D8D6AA" referredColumn="F673D99A-0D94-6D77-3BC1-75ED116C3F90"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="973DC91E-3110-4B29-3A03-66DDA9507E62" name="OWNER_PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>5CACE7A6-188E-DDBE-06A9-212E20749F14</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3F4B77F-0DD0-3750-0B53-CD0A8B1D479D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B8C4460-94EC-1632-E925-8ABBB134870E" name="OWNER__IDX">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<ownerDesignName>ad_logical</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>19DD29B3-32D0-6BE2-2348-0434AF28770E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0E0853F7-59AE-9534-2B5A-2ACE75C1F182"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="828FF013-39FA-BD2F-18C5-6F22CA7651AF" name="PREFFERED_VET">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>19DD29B3-32D0-6BE2-2348-0434AF28770E</generatorID>
+<ownerDesignName>ad_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E0853F7-59AE-9534-2B5A-2ACE75C1F182"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

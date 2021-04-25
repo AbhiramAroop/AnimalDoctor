@@ -99,7 +99,7 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="vet_id" id="50D047F6-B155-3A74-2C85-579168A9A392">
+<Attribute name="VET_vet_id" id="50D047F6-B155-3A74-2C85-579168A9A392">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 06:24:48 UTC</createdTime>
 <commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
@@ -114,11 +114,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="5CACE7A6-188E-DDBE-06A9-212E20749F14" name="OWNER PK">
+<identifier id="5CACE7A6-188E-DDBE-06A9-212E20749F14" name="OWNER_PK">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 05:45:10 UTC</createdTime>
 <ownerDesignName>ad_logical</ownerDesignName>
