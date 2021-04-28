@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACEB41B8-B13E-4238-D1CC-597B0E1C2401" name="SERVICE">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>A532F9B5-7165-4F1B-8F12-56C14476388D</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="service_code" id="456922EE-EA7A-6246-1830-C8BAAB51BCFD">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique service identifier]]></commentInRDBMS>
+<generatorID>EC3EEF95-BBF5-D1CF-B319-270716B5E248</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_desc" id="2760DE36-6A0B-83E2-7521-863AB6BB6732">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[description of service]]></commentInRDBMS>
+<generatorID>DCD94E56-F4DC-A924-6C4B-40324A40C3EF</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_cost" id="99E553C8-5093-71E8-0087-5157DA337B5B">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>641FDB0C-1A89-F049-79E9-AAF31BA590AA</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VISIT_visit_datetime" id="AAF16123-8225-E787-C171-77D1EBFD6181">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[date and time of visit]]></commentInRDBMS>
+<generatorID>29E4D9B0-F84A-7508-DF56-8D9D62CF3B4B</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="604C6B49-647D-CBAF-9A10-70330380D1E1" referredColumn="D47447F6-7493-2754-6970-52DC86E1F089"/>
+</associations>
+</Column>
+<Column name="VET_vet_id" id="B7DF0103-094D-6F41-B615-832534ACB49B">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>0C2906F1-A72D-9F76-F81F-D0A2D3E1D5B2</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="604C6B49-647D-CBAF-9A10-70330380D1E1" referredColumn="B1B0EEDD-E61C-974D-51DD-D54AC286D5D0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0456EBFA-2889-BDA4-409A-23DC9DAB25A9" name="SERVICE_PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>04FC6B73-6E66-F504-AFE8-C00D41FAAD72</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="456922EE-EA7A-6246-1830-C8BAAB51BCFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="389B279C-3894-B4FE-CB52-E30C91BDC1A2" name="VISIT_SERVICE">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>F6776C45-44FC-278E-D058-740E881E4FEF</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAF16123-8225-E787-C171-77D1EBFD6181"/>
+<colUsage columnID="B7DF0103-094D-6F41-B615-832534ACB49B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

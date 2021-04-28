@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VISIT_SERVICE" directorySegmentName="seg_0" id="F6776C45-44FC-278E-D058-740E881E4FEF">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:40:12 UTC</createdTime>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<targetTransferable>false</targetTransferable>
+<sourcePk>8AA9E901-459B-0DDC-F4AA-889C6AC2C0EF</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>provides</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>44B2A142-9B5B-B098-3355-21F20246A9BA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A532F9B5-7165-4F1B-8F12-56C14476388D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

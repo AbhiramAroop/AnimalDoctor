@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="780D3E82-4E96-04B8-FD76-23B60B550DD7" name="DRUG">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>3ECF7CFD-0D62-2CE6-72D8-B818FC6A4D0F</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="drug_id" id="E8775EFA-14AB-E1B4-6C2D-6D721F4654D7">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique drug identifier]]></commentInRDBMS>
+<generatorID>78F7B106-1E2A-FB60-4C37-08EE56F1D2F0</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_name" id="7E9BA69F-CE41-FCCD-995A-DF1ACD8AEB41">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of drug]]></commentInRDBMS>
+<generatorID>11704422-B7A6-A2C8-C643-AAB7555D1981</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_qty" id="0497511C-6C12-39EC-FCBA-C73C09A46875">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantity of drug]]></commentInRDBMS>
+<generatorID>3D13F0A1-DEB1-C29C-45CA-6AAF33775306</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_cost" id="26EE4C2E-4766-70DF-DA83-F6EF7CD13F37">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[cost of the drug]]></commentInRDBMS>
+<generatorID>43C80CB2-912F-58D4-C1E5-C6C46ACB3D54</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VISIT_visit_datetime" id="22AA43E9-D249-59AB-758E-C22D5D1AD06D">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[date and time of visit]]></commentInRDBMS>
+<generatorID>4DAF55E8-4424-2166-917E-79D0DD193F6E</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECC61128-5343-A68B-462C-06F117B1EDE7" referredColumn="D47447F6-7493-2754-6970-52DC86E1F089"/>
+</associations>
+</Column>
+<Column name="VET_vet_id" id="A35F1AB0-6D78-65D5-1E04-51891B319DEB">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>26E903B3-E9E8-4003-ABFE-D1DECB9F4E00</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECC61128-5343-A68B-462C-06F117B1EDE7" referredColumn="B1B0EEDD-E61C-974D-51DD-D54AC286D5D0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED43ABE4-9B1E-D1BE-C06C-7579CBDA7B8B" name="DRUG_PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>7E3C9DBB-FD2C-3001-1BD4-7CFF89E3807D</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8775EFA-14AB-E1B4-6C2D-6D721F4654D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C39B959-00C5-F57D-DC25-613611326DAC" name="VISIT_DRUG">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>0C2541C7-76A9-F91E-E4F0-8310618C61B5</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22AA43E9-D249-59AB-758E-C22D5D1AD06D"/>
+<colUsage columnID="A35F1AB0-6D78-65D5-1E04-51891B319DEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93DAF347-D902-5A66-9F3A-FC09F2896E4D" name="PET">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>24C37E83-5182-7739-FE23-BC4351A71137</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pet_id" id="A009376A-D597-A5D4-36DF-9F69EA952689">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique identifier for the pet]]></commentInRDBMS>
+<generatorID>44ABC3F9-F96D-2B52-617B-2651C91F36F1</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OWNER_owner_id" id="2D9B0C0D-7C99-B8B0-7AE4-612283EBCFEF">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for the pet owner]]></commentInRDBMS>
+<generatorID>8E994B89-7385-2096-1336-0D36FDA92C82</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBFDAA09-40DA-3D54-C231-6547A9573ECA" referredColumn="F3F4B77F-0DD0-3750-0B53-CD0A8B1D479D"/>
+</associations>
+</Column>
+<Column name="pet_gender" id="8D6BC8E6-3D70-5156-6FC8-179F432FD48E">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Gender of the animal]]></commentInRDBMS>
+<generatorID>8A59601A-B8AD-5F16-8FD2-B6573F52FAB6</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_name" id="0FA0C3D8-8DE2-4C01-ED6F-38ABD87ACE32">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of the animal]]></commentInRDBMS>
+<generatorID>84E22A1C-F848-4779-613F-C412167E1717</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_type" id="0E67EE1B-CEF4-4D0E-5FBF-BFA55CABCEC2">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Species of animal]]></commentInRDBMS>
+<generatorID>7DF93857-06A8-930D-C296-1752D6FD82E7</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_dob" id="D7339303-D424-56A2-9EF4-48DB12DE9D7A">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[date of birth of pet]]></commentInRDBMS>
+<generatorID>81579B0B-DE17-0207-7EB5-6E4A1A2288E9</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_deceased" id="1E02082A-9421-FAA6-3728-F7B689240DB9">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Boolean of whether pet has been deceased]]></commentInRDBMS>
+<generatorID>B600FD26-C651-9B40-1859-D813A9808330</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E75587D5-2A32-5743-B94C-50A8423E2A85" name="PET_PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>67763A09-8AF4-B5CE-FD78-F9CF58C3F9B3</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A009376A-D597-A5D4-36DF-9F69EA952689"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52CA7C4E-7A81-A650-F905-073011EDB595" name="PET_OWNERSHIP">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>99748BBE-FD3A-73C0-523D-A99EC8042376</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D9B0C0D-7C99-B8B0-7AE4-612283EBCFEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

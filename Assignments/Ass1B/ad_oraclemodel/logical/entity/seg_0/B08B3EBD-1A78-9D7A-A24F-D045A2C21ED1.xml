@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B08B3EBD-1A78-9D7A-A24F-D045A2C21ED1" name="OWNER">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 05:44:43 UTC</createdTime>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="owner_id" id="C46C81D2-B0BF-D9BB-6D57-0F3763CAD521">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 05:44:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique identifier for the pet owner]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_gname" id="1EEF963B-1E26-F44B-5106-B6CB6DD0A0CA">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 05:45:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Given/First name of the owner]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_fname" id="762B062C-F9D2-8EE8-B64C-CF4B8A1F8155">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 05:45:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[family/last name of the owner]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_street" id="90FB0BD7-3C93-3F39-BD9B-A472FFD5656F">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 05:46:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street where owner lives]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_town" id="357B48B2-34D0-9FC7-6F6C-D771888B7CD5">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 05:47:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Town where owner is located]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_postcode" id="581EEA63-C13E-7EC5-3574-8FCC2029DE5B">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 05:48:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Post code of owner's location]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VET_vet_id" id="50D047F6-B155-3A74-2C85-579168A9A392">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 06:24:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>19DD29B3-32D0-6BE2-2348-0434AF28770E</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>01417F92-781B-2802-1582-96F5B29E514E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5CACE7A6-188E-DDBE-06A9-212E20749F14" name="OWNER_PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 05:45:10 UTC</createdTime>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C46C81D2-B0BF-D9BB-6D57-0F3763CAD521</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

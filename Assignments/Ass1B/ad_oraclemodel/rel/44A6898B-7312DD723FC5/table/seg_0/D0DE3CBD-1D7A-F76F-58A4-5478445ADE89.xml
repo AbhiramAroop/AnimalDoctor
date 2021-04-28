@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0DE3CBD-1D7A-F76F-58A4-5478445ADE89" name="VISIT">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>44B2A142-9B5B-B098-3355-21F20246A9BA</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PET_pet_id" id="FE5EAB08-E1FF-932A-90A3-FA4296034EEE">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique identifier for the pet]]></commentInRDBMS>
+<generatorID>15AA18FF-F127-A0A9-0618-CA7DA54DC5BB</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66D7A460-72DB-83DF-BB57-8714956661DD" referredColumn="A009376A-D597-A5D4-36DF-9F69EA952689"/>
+</associations>
+</Column>
+<Column name="visit_datetime" id="D47447F6-7493-2754-6970-52DC86E1F089">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[date and time of visit]]></commentInRDBMS>
+<generatorID>252F665C-CDF4-0873-E2A6-10A0210AFA43</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_cost" id="163652C9-7010-4C49-43B7-34DAF5D0D24C">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[cost of services in visit]]></commentInRDBMS>
+<generatorID>895662C7-891C-61FC-A0E9-28045C5C3092</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_method" id="23B7472D-945D-B374-8C30-880B6F385D96">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Method of payment of total amount]]></commentInRDBMS>
+<generatorID>D805944E-5D37-BF03-EB97-668E69E97051</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VET_vet_id" id="B1B0EEDD-E61C-974D-51DD-D54AC286D5D0">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>37C65F32-924E-C050-2DD9-9214CA52B9C9</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADAE144E-C9CE-4F67-AD55-F887E454079F" referredColumn="F673D99A-0D94-6D77-3BC1-75ED116C3F90"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DE634E7-2788-333F-542B-68FA6110AE19" name="VISIT_PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>8AA9E901-459B-0DDC-F4AA-889C6AC2C0EF</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D47447F6-7493-2754-6970-52DC86E1F089"/>
+<colUsage columnID="B1B0EEDD-E61C-974D-51DD-D54AC286D5D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FD9305D-BDAC-C7A7-77ED-3BD2AF8A025E" name="PET_VISIT">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>760A5C6A-FBD0-56E5-4026-17AD00B56B30</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE5EAB08-E1FF-932A-90A3-FA4296034EEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="639DBD59-5586-AF66-FCAE-2CFEAD09B4EA" name="VET_VISIT">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 02:10:25 UTC</createdTime>
+<generatorID>BAA9E175-6C83-CF9C-897F-0603A1D6C4EB</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1B0EEDD-E61C-974D-51DD-D54AC286D5D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

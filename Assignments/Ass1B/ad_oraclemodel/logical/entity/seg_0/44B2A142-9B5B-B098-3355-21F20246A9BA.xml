@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="44B2A142-9B5B-B098-3355-21F20246A9BA" name="VISIT">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 06:32:12 UTC</createdTime>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PET_pet_id" id="15AA18FF-F127-A0A9-0618-CA7DA54DC5BB">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:04:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique identifier for the pet]]></commentInRDBMS>
+<generatorID>760A5C6A-FBD0-56E5-4026-17AD00B56B30</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<referedAttribute>44ABC3F9-F96D-2B52-617B-2651C91F36F1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_datetime" id="252F665C-CDF4-0873-E2A6-10A0210AFA43">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:34:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[date and time of visit]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_cost" id="895662C7-891C-61FC-A0E9-28045C5C3092">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:34:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[cost of services in visit]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="payment_method" id="D805944E-5D37-BF03-EB97-668E69E97051">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:35:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Method of payment of total amount]]></commentInRDBMS>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VET_vet_id" id="37C65F32-924E-C050-2DD9-9214CA52B9C9">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-25 01:58:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>
+<generatorID>BAA9E175-6C83-CF9C-897F-0603A1D6C4EB</generatorID>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+</engineerTo>
+<referedAttribute>01417F92-781B-2802-1582-96F5B29E514E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8AA9E901-459B-0DDC-F4AA-889C6AC2C0EF" name="VISIT_PK">
+<createdBy>aaro0006</createdBy>
+<createdTime>2021-04-23 07:04:30 UTC</createdTime>
+<ownerDesignName>ad_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>252F665C-CDF4-0873-E2A6-10A0210AFA43</attributeRef>
+<attributeRef>37C65F32-924E-C050-2DD9-9214CA52B9C9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
