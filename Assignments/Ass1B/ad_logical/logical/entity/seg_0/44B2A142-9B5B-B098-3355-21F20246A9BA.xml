@@ -55,7 +55,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="payment_method" id="D805944E-5D37-BF03-EB97-668E69E97051">
 <createdBy>aaro0006</createdBy>
@@ -94,8 +96,9 @@
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-23 07:04:30 UTC</createdTime>
 <ownerDesignName>ad_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="true"/>
+<item key="44A6898B-0E78-0953-B63F-7312DD723FC5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -62,7 +62,7 @@
 <colAssociation fkAssociation="604C6B49-647D-CBAF-9A10-70330380D1E1" referredColumn="D47447F6-7493-2754-6970-52DC86E1F089"/>
 </associations>
 </Column>
-<Column name="VISIT_VET_vet_id" id="B7DF0103-094D-6F41-B615-832534ACB49B">
+<Column name="VET_vet_id" id="B7DF0103-094D-6F41-B615-832534ACB49B">
 <createdBy>aaro0006</createdBy>
 <createdTime>2021-04-25 02:10:25 UTC</createdTime>
 <commentInRDBMS><![CDATA[unique identifier for the vet]]></commentInRDBMS>

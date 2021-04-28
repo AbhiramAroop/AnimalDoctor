@@ -1,0 +1,171 @@
+
+Table DRUG dropped.
+
+
+Table OWNER dropped.
+
+
+Table PET dropped.
+
+
+Table SERVICE dropped.
+
+
+Table VET dropped.
+
+
+Table VISIT dropped.
+
+
+Table DRUG created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table DRUG altered.
+
+
+Table OWNER created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+INDEX OWNER__IDX created.
+
+
+Table OWNER altered.
+
+
+Table PET created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table PET altered.
+
+
+Table SERVICE created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table SERVICE altered.
+
+
+Table VET created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table VET altered.
+
+
+Table VISIT created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table VISIT altered.
+
+
+Table PET altered.
+
+
+Table VISIT altered.
+
+
+Table OWNER altered.
+
+
+Table VISIT altered.
+
+
+Table DRUG altered.
+
+
+Table SERVICE altered.
+
+
+Trigger FKNTM_SERVICE compiled
+
