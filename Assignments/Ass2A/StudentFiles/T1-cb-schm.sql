@@ -29,18 +29,23 @@ CREATE TABLE species (
     spec_name VARCHAR2(20) NOT NULL,
     spec_popular_name VARCHAR2(40) NOT NULL,
     spec_family VARCHAR2(20) NOT NULL, 
-    spec_natural_range VARCHAR2(100) NOT NULL
+    spec_natural_range VARCHAR2(100) NOT NULL,
+    CONSTRAINT spec_pk PRIMARY KEY ( spec_genus ),
+    CONSTRAINT spec_pk PRIMARY KEY ( spec_name )
     
 );
 
 CREATE TABLE animal (
     animal_id NUMERIC(6) NOT NULL,
     animal_sex CHAR(1) NOT NULL,
-    brevent_id NUMERIC(6) NOT NULL,
-    centre_id CHAR(6) NOT NULL,
+    brevent_id NUMERIC(6),
+    centre_id CHAR(6),
     spec_genus VARCHAR(20) NOT NULL,
-    spec_name VARCHAR(20) NOT NULL
-    
+    spec_name VARCHAR(20) NOT NULL,
+    CONSTRAINT animal_pk PRIMARY KEY ( animal_id ),
+    CONSTRAINT animal_brevent_fk FOREIGN KEY ( brevent_id ) REFERENCES brevent ( brevent_id ) ON DELETE SET NULL,
+    CONSTRAINT animal_centre_fk FOREIGN KEY ( centre_id ) REFERENCES centre ( centre_id ) ON DELETE SET NULL,
+    CONSTRAINT animal_spec_fk FOREIGN KEY ( spec_genus, spec_name ) REFERENCES species ( spec_genus, spec_name ) ON DELETE SET NULL
 );
 
 CREATE TABLE centre (
@@ -48,7 +53,8 @@ CREATE TABLE centre (
     centre_name VARCHAR(40) NOT NULL,
     centre_address VARCHAR(100) NOT NULL,
     centre_director VARCHAR(30) NOT NULL,
-    centre_phone_no VARCHAR(20) NOT NULL
+    centre_phone_no VARCHAR(20) NOT NULL,
+    CONSTRAINT centre_pk PRIMARY KEY ( centre_id )
     
 );
 
@@ -56,6 +62,8 @@ CREATE TABLE breeding_event (
     brevent_id NUMERIC(6) NOT NULL,
     brevent_date DATE NOT NULL,
     mother_id NUMERIC(6) NOT NULL,
-    father_id NUMERIC(6) NOT NULL
+    father_id NUMERIC(6) NOT NULL,
+    CONSTRAINT brevent_pk PRIMARY KEY ( brevent_id ),
+    CONSTRAINT brevent_animal_fk FOREIGN KEY ( mother_id , father_id ) REFERENCES centre ( animal_id ) ON DELETE SET NULL    
 
 );
