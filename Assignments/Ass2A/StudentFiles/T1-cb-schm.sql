@@ -31,6 +31,31 @@ CREATE TABLE species (
     spec_family VARCHAR2(20) NOT NULL, 
     spec_natural_range VARCHAR2(100) NOT NULL
     
-
 );
 
+CREATE TABLE animal (
+    animal_id NUMERIC(6) NOT NULL,
+    animal_sex CHAR(1) NOT NULL,
+    brevent_id NUMERIC(6) NOT NULL,
+    centre_id CHAR(6) NOT NULL,
+    spec_genus VARCHAR(20) NOT NULL,
+    spec_name VARCHAR(20) NOT NULL
+    
+);
+
+CREATE TABLE centre (
+    centre_id CHAR(6) NOT NULL,
+    centre_name VARCHAR(40) NOT NULL,
+    centre_address VARCHAR(100) NOT NULL,
+    centre_director VARCHAR(30) NOT NULL,
+    centre_phone_no VARCHAR(20) NOT NULL
+    
+);
+
+CREATE TABLE breeding_event (
+    brevent_id NUMERIC(6) NOT NULL,
+    brevent_date DATE NOT NULL,
+    mother_id NUMERIC(6) NOT NULL,
+    father_id NUMERIC(6) NOT NULL
+
+);
