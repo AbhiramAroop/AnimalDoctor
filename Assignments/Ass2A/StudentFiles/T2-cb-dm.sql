@@ -1,9 +1,9 @@
 --****PLEASE ENTER YOUR DETAILS BELOW****
 --T2-cb-dm.sql
 
---Student ID:
---Student Name:
---Tutorial No:
+--Student ID: 30632714
+--Student Name: Abhiram Aroop
+--Tutorial No: Tutorial 06
 
 /* Comments for your marker:
 

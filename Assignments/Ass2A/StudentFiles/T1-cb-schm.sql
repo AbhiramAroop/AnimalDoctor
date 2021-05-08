@@ -59,7 +59,7 @@ CREATE TABLE animal (
     animal_id NUMERIC(6) NOT NULL,
     animal_sex CHAR(1) NOT NULL,
     centre_id CHAR(6) NOT NULL,
-    brevent_id NUMERIC(6) NOT NULL,
+    brevent_id NUMERIC(6),
     spec_genus VARCHAR(20) NOT NULL,
     spec_name VARCHAR(20) NOT NULL,
     CONSTRAINT animal_pk PRIMARY KEY ( animal_id ),
@@ -95,4 +95,4 @@ COMMENT ON COLUMN breeding_event.brevent_date IS 'The date on which the breeding
 COMMENT ON COLUMN breeding_event.mother_id IS 'The animal_id of the animal who was the mother';
 COMMENT ON COLUMN breeding_event.father_id IS 'The animal_id of the animal who was the father';
 
-ALTER TABLE animal ADD CONSTRAINT animal_breeding_event_fk FOREIGN KEY ( brevent_id ) REFERENCES breeding_event ( brevent_id ); 
+ALTER TABLE animal ADD CONSTRAINT animal_breeding_event_fk FOREIGN KEY ( brevent_id ) REFERENCES breeding_event ( brevent_id ) ON DELETE SET NULL; 

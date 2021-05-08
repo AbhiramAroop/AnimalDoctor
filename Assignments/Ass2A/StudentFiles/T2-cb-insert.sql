@@ -1,9 +1,9 @@
 --****PLEASE ENTER YOUR DETAILS BELOW****
 --T2-cb-insert.sql
 
---Student ID:
---Student Name:
---Tutorial No:
+--Student ID: 30632714
+--Student Name: Abhiram Aroop
+--Tutorial No: Tutorial 06
 
 /* Comments for your marker:
 
@@ -24,4 +24,12 @@ insert as a minimum, the following sample data -
 Your inserted rows must meet the assignment specification requirements
 */
 --PLEASE PLACE REQUIRED SQL STATEMENT(S) BELOW
+
+-- INSERTING into ANIMAL
+Insert into ANIMAL (ANIMAL_ID,ANIMAL_SEX,CENTRE_ID,BREVENT_ID,SPEC_GENUS,SPEC_NAME) values ('12','M','AUS10',NULL,'Myrmecobius','fasciatus');
+
+
+
+
+-- INSERTING into BREEDING_EVENT
 
