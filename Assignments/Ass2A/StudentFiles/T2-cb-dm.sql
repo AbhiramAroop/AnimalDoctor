@@ -42,8 +42,19 @@ WHERE centre.centre_id = (SELECT centre.centre_id
 
 -- (iii)
 
+INSERT into ANIMAL (ANIMAL_ID,ANIMAL_SEX,CENTRE_ID,BREVENT_ID,SPEC_GENUS,SPEC_NAME) values (animal_id_seq.nextval,
+                                                                                            'F',
+                                                                                            (SELECT centre.centre_id FROM centre WHERE centre.centre_name = 'Australia Zoo'),
+                                                                                            NULL,
+                                                                                            (SELECT species.spec_genus FROM species WHERE species.spec_popular_name = 'Tasmanian Devil'),
+                                                                                            (SELECT species.spec_name FROM species WHERE species.spec_popular_name = 'Tasmanian Devil'));
 
-
+INSERT into ANIMAL (ANIMAL_ID,ANIMAL_SEX,CENTRE_ID,BREVENT_ID,SPEC_GENUS,SPEC_NAME) values (animal_id_seq.nextval,
+                                                                                            'M',
+                                                                                            (SELECT centre.centre_id FROM centre WHERE centre.centre_name = 'Werribee Open Range Zoo'),
+                                                                                            NULL,
+                                                                                            (SELECT species.spec_genus FROM species WHERE species.spec_popular_name = 'Tasmanian Devil'),
+                                                                                            (SELECT species.spec_name FROM species WHERE species.spec_popular_name = 'Tasmanian Devil'));
 
 -- (iv)
 
