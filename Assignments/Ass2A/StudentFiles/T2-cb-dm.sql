@@ -21,12 +21,24 @@ Complete the listed DML actions
 
 -- (i)
 
-
+CREATE SEQUENCE animal_id_seq START WITH 500 INCREMENT BY 1;
+CREATE SEQUENCE brevent_id_seq START WITH 500 INCREMENT BY 1;
 
 -- (ii)
 
-
-
+UPDATE animal
+SET (animal.centre_id) = (SELECT centre.centre_id
+                          FROM centre
+                          WHERE centre.centre_name = 'Kruger National Park')
+                        
+WHERE animal.centre_id = (SELECT centre.centre_id
+                          FROM centre
+                          WHERE centre.centre_name = 'SanWild Wildlife Sanctuary');
+                          
+DELETE FROM centre
+WHERE centre.centre_id = (SELECT centre.centre_id
+                          FROM centre
+                          WHERE centre.centre_name = 'SanWild Wildlife Sanctuary');
 
 -- (iii)
 

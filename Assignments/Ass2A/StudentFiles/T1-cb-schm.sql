@@ -27,7 +27,7 @@ DROP TABLE breeding_event CASCADE CONSTRAINTS purge;
 CREATE TABLE species (
     spec_genus VARCHAR2(20) NOT NULL,
     spec_name VARCHAR2(20) NOT NULL,
-    spec_popular_name VARCHAR2(40) NOT NULL,
+    spec_popular_name VARCHAR2(40) NOT NULL UNIQUE,
     spec_family VARCHAR2(20) NOT NULL, 
     spec_natural_range VARCHAR2(100) NOT NULL,
     CONSTRAINT spec_pk PRIMARY KEY ( spec_genus,spec_name )    
@@ -41,7 +41,7 @@ COMMENT ON COLUMN species.spec_natural_range IS 'Description of the natural rang
 
 CREATE TABLE centre (
     centre_id CHAR(6) NOT NULL,
-    centre_name VARCHAR(40) NOT NULL,
+    centre_name VARCHAR(40) NOT NULL UNIQUE,
     centre_address VARCHAR(100) NOT NULL,
     centre_director VARCHAR(30) NOT NULL,
     centre_phone_no VARCHAR(20) NOT NULL,
