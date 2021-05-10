@@ -47,3 +47,22 @@ UPDATE ANIMAL SET animal.animal_alive = ('N') WHERE animal.animal_id = '2';
 
 -- (c)
 
+ALTER TABLE centre ADD centre_type VARCHAR2(20) DEFAULT 'Other';
+
+UPDATE centre
+SET (centre.centre_type) = 'Zoo' 
+WHERE centre.centre_name LIKE '% Zoo';
+
+UPDATE centre
+SET (centre.centre_type) = 'Wildlife Park' 
+WHERE centre.centre_name LIKE '% Park';
+
+UPDATE centre
+SET (centre.centre_type) = 'Sanctuary' 
+WHERE centre.centre_name LIKE '% Sanctuary';
+
+UPDATE centre
+SET (centre.centre_type) = 'Nature Reserve' 
+WHERE centre.centre_name LIKE '% Nature Reserve';
+
+
