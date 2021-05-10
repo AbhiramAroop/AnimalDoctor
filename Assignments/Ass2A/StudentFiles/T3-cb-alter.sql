@@ -62,7 +62,7 @@ SET (centre.centre_type) = 'Sanctuary'
 WHERE centre.centre_name LIKE '% Sanctuary';
 
 UPDATE centre
-SET (centre.centre_type) = 'Nature Reserve' 
+SET (centre.centre_type) = 'Nature Reserve'
 WHERE centre.centre_name LIKE '% Nature Reserve';
 
 

@@ -60,7 +60,7 @@ INSERT into ANIMAL (ANIMAL_ID,ANIMAL_SEX,CENTRE_ID,BREVENT_ID,SPEC_GENUS,SPEC_NA
 
 Insert into BREEDING_EVENT (BREVENT_ID,BREVENT_DATE,MOTHER_ID,FATHER_ID) values (brevent_id_seq.nextval,
 
-                                                                                '10-Feb-2021',
+                                                                                TO_DATE('10-Feb-2021'),
                                                                                 
                                                                                 (SELECT animal.animal_id FROM animal WHERE animal.centre_id = (SELECT centre.centre_id FROM centre WHERE centre.centre_name = 'Australia Zoo')
                                                                                 AND animal.spec_genus = (SELECT species.spec_genus FROM species WHERE species.spec_popular_name = 'Tasmanian Devil')
