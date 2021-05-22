@@ -96,6 +96,23 @@ ORDER BY
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
 
+SELECT
+    mh.helicopter_type.ht_name,
+    mh.helicopter_type.ht_nbr,
+    COUNT(*) "NUMBER OF HELICOPTERS"
+FROM
+         mh.helicopter
+    INNER JOIN mh.helicopter_type
+    ON mh.helicopter_type.ht_nbr = mh.helicopter.ht_nbr
+GROUP BY
+    mh.helicopter_type.ht_name,
+    mh.helicopter_type.ht_nbr
+HAVING
+    COUNT(*) > 1
+ORDER BY
+    "NUMBER OF HELICOPTERS" DESC;
+
+
 
 /*
     Q5
