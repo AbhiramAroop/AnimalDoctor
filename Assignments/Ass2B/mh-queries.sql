@@ -120,6 +120,24 @@ ORDER BY
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
 
+SELECT
+    mh.location.location_nbr,
+    mh.location.location_name,
+    COUNT(*) "NUMBER OF ORIGIN LOCATION"
+FROM
+         mh.location
+    INNER JOIN mh.charter_leg
+    ON mh.location.location_nbr = mh.charter_leg.location_nbr_origin
+GROUP BY
+    mh.location.location_nbr,
+    mh.location.location_name
+HAVING
+    COUNT(*) > 1
+ORDER BY
+    "NUMBER OF ORIGIN LOCATION";
+
+
+
 
 /*
     Q6
