@@ -137,14 +137,25 @@ ORDER BY
     "NUMBER OF ORIGIN LOCATION";
 
 
-
-
 /*
     Q6
 */
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
 
+SELECT
+    mh.helicopter_type.ht_nbr,
+    mh.helicopter_type.ht_name,
+    SUM(mh.helicopter.heli_hrs_flown) "TOTAL HOURS FLOWN"
+FROM
+         mh.helicopter
+    INNER JOIN mh.helicopter_type
+    ON mh.helicopter_type.ht_nbr = mh.helicopter.ht_nbr
+GROUP BY
+    mh.helicopter_type.ht_nbr,
+    mh.helicopter_type.ht_name
+ORDER BY
+    "TOTAL HOURS FLOWN";
 
 /*
     Q7
@@ -152,6 +163,29 @@ ORDER BY
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
 
+SELECT
+    mh.charter_leg.charter_nbr AS charter_nbr1,
+    mh.charter_leg.cl_atd
+FROM
+         mh.charter
+    INNER JOIN mh.charter_leg
+    ON mh.charter.charter_nbr = mh.charter_leg.charter_nbr
+    INNER JOIN mh.employee
+    ON mh.charter.emp_nbr = mh.employee.emp_nbr
+WHERE
+    mh.charter_leg.cl_atd IS NOT NULL
+    AND mh.charter.emp_nbr = (
+        SELECT
+            mh.employee.emp_nbr
+        FROM
+            mh.employee
+        WHERE
+                mh.employee.emp_lname = 'Baggins'
+            AND mh.employee.emp_fname = 'Frodo'
+    AND mh.charter_leg.cl_leg_nbr = 1
+    )
+ORDER BY
+    mh.charter_leg.cl_atd DESC;
 
 /*
     Q8
