@@ -226,6 +226,22 @@ ORDER BY
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
 
+SELECT
+    DISTINCT mh.charter_leg.charter_nbr,
+    concat(mh.employee.emp_fname, concat(' ', mh.employee.emp_lname)) "PILOTNAME",
+    concat(mh.client.client_fname, concat(' ', mh.client.client_lname)) "CLIENTNAME"    
+FROM
+         mh.charter
+    INNER JOIN mh.employee
+    ON mh.employee.emp_nbr = mh.charter.emp_nbr
+    INNER JOIN mh.client
+    ON mh.client.client_nbr = mh.charter.client_nbr
+    INNER JOIN mh.charter_leg
+    ON mh.charter.charter_nbr = mh.charter_leg.charter_nbr
+WHERE
+    (mh.charter_leg.charter_nbr NOT IN (SELECT mh.charter_leg.charter_nbr FROM mh.charter_leg WHERE mh.charter_leg.cl_etd != mh.charter_leg.cl_atd OR mh.charter_leg.cl_atd IS null))
+ORDER BY
+    mh.charter_leg.charter_nbr;
 
 
 
