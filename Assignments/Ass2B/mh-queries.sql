@@ -165,7 +165,7 @@ ORDER BY
 
 SELECT
     mh.charter_leg.charter_nbr AS charter_nbr1,
-    mh.charter_leg.cl_atd
+    TO_CHAR(TO_DATE(mh.charter_leg.cl_atd), 'TS DD Mon YYYY') "Date/Time"
 FROM
          mh.charter
     INNER JOIN mh.charter_leg
@@ -183,7 +183,7 @@ WHERE
                 mh.employee.emp_lname = 'Baggins'
             AND mh.employee.emp_fname = 'Frodo'
     AND mh.charter_leg.cl_leg_nbr = 1
-    )
+    ) AND mh.charter_leg.charter_nbr NOT IN ((SELECT mh.charter_leg.charter_nbr FROM mh.charter_leg WHERE mh.charter_leg.cl_atd IS null))
 ORDER BY
     mh.charter_leg.cl_atd DESC;
 
@@ -193,12 +193,41 @@ ORDER BY
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
 
+SELECT
+    mh.charter_leg.charter_nbr,
+    mh.charter.client_nbr,
+    NVL(mh.client.client_fname, '-'),
+    NVL(mh.client.client_lname, '-'),
+    CONCAT('$',TO_CHAR(round(mh.charter.charter_cost_per_hour * (mh.charter_leg.cl_ata -
+    mh.charter_leg.cl_atd) * 24,2))) totalchartercost
+FROM
+         mh.charter
+    INNER JOIN mh.charter_leg
+    ON mh.charter_leg.charter_nbr = mh.charter.charter_nbr
+    INNER JOIN mh.client
+    ON mh.client.client_nbr = mh.charter.client_nbr
+WHERE
+    (mh.charter_leg.charter_nbr) NOT IN((SELECT mh.charter_leg.charter_nbr FROM mh.charter_leg WHERE mh.charter_leg.cl_atd IS null)) AND
+   ((mh.charter.charter_cost_per_hour *(mh.charter_leg.cl_ata -
+    mh.charter_leg.cl_atd) * 24) < (SELECT DISTINCT AVG(mh.charter.charter_cost_per_hour *(mh.charter_leg.cl_ata -
+    mh.charter_leg.cl_atd) * 24) OVER() FROM mh.charter INNER JOIN MH.charter_leg ON mh.charter_leg.charter_nbr=mh.charter.charter_nbr ))
+GROUP BY
+    mh.charter_leg.charter_nbr,
+    mh.charter.client_nbr,
+    mh.client.client_fname,
+    mh.client.client_lname,
+    round(mh.charter.charter_cost_per_hour *(mh.charter_leg.cl_ata - mh.charter_leg.cl_atd) * 24,2)
+ORDER BY
+    totalchartercost DESC;
 
 /*
     Q9
 */
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
+
+
+
 
 
 /*
