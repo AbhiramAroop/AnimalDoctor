@@ -252,3 +252,37 @@ ORDER BY
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
 
+SELECT
+    client_nbr,
+    clientname,
+    MIN(location_name) KEEP (DENSE_RANK FIRST ORDER BY favourite_destination),
+    MAX(favourite_destination) "FAVOURITE DESTINATION"
+FROM
+    (
+        SELECT
+            mh.charter.client_nbr,
+            concat(mh.client.client_fname, concat(' ', mh.client.client_lname))                  clientname,
+            mh.location.location_name,
+            ( COUNT(mh.charter_leg.location_nbr_origin) )                                          favourite_destination
+        FROM
+                 mh.client
+            INNER JOIN mh.charter
+            ON mh.client.client_nbr = mh.charter.client_nbr
+            INNER JOIN mh.charter_leg
+            ON mh.charter.charter_nbr = mh.charter_leg.charter_nbr
+            INNER JOIN mh.location
+            ON mh.charter_leg.location_nbr_destination = mh.location.location_nbr
+        GROUP BY
+            mh.charter.client_nbr,
+            concat(mh.client.client_fname, concat(' ', mh.client.client_lname)),
+            mh.location.location_name
+        ORDER BY
+            mh.charter.client_nbr,
+            mh.location.location_name
+    ) 
+group by client_nbr, clientname
+ORDER BY
+    client_nbr;
+
+
+
