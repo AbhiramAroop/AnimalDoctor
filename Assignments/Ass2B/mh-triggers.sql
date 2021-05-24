@@ -64,6 +64,26 @@ END;
 */
 /*Please copy your trigger code and any other necessary SQL statements after this line*/
 
+create or replace TRIGGER HELICOPTER_FLOWN_UPDATE
+    AFTER INSERT OR UPDATE OF CL_ATD,CL_ATA ON CHARTER_LEG
+    FOR EACH ROW
+    DECLARE
+    heli_hr NUMBER;    
+BEGIN
+    
+    SELECT HELI_HRS_FLOWN 
+    FROM CHARTER_LEG CL INNER JOIN CHARTER C
+        ON cl.charter_nbr = C.charter_nbr 
+        INNER JOIN HELICOPTER H
+        ON c.heli_callsign = h.heli_callsign
+    WHERE c.heli_callsign = :new.heli_callsign;    
+
+    IF (:new.CL_ATA IS NOT null AND :new.CL_ATD IS NOT null AND :new.CL_ATA - :new.CL_ATD > 0)
+    THEN UPDATE CHARTER_LEG SET CHARTER_LEG.HELICOPTER_HRS_FLOWN = CHARTER_LEG.HELICOPTER_HRS_FLOWN + (new.CL_ATA - :new.CL_ATD);
+    END IF;
+    
+END;
+/
 
 
 
